@@ -6,7 +6,7 @@ export default function FAQPage() {
                     Frequently Asked Questions
                 </h2>
                 <p className="text-gray-700 dark:text-gray-200">
-                    Have questions about Coding Club? We've got answers.
+                    Have questions about Coding Club? We&#39;ve got answers.
                 </p>
             </section>
 
