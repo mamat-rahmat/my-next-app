@@ -12,7 +12,7 @@ export default async function EventDetail({ params }: Props) {
                     Event Details
                 </h2>
                 <p className="text-gray-700 dark:text-gray-200 mb-6">
-                    You're viewing details for event with ID: <span className="font-medium">{id}</span>
+                    You&#39;re viewing details for event with ID: <span className="font-medium">{id}</span>
                 </p>
                 <img
                     src={`https://picsum.photos/id/${id}/400/300`}
