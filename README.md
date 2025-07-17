@@ -47,11 +47,39 @@ Proyek ini dibuat untuk memenuhi tugas **Jabar Digital Academy**
 }
 ```
 
+## 📋 Tugas Pertemuan 5
+
+### Persyaratan yang Dipenuhi:
+- ✅ **Endpoint API CRUD** di `/api/articles` menggunakan database
+  - `GET /api/articles` - Mengambil semua data articles
+  - `POST /api/articles` - Menambahkan article baru
+  - `PUT /api/articles/[id]` - Mengupdate article berdasarkan ID
+  - `DELETE /api/articles/[id]` - Menghapus article berdasarkan ID
+
+- ✅ **Halaman CRUD** di `/articles`
+  - Menampilkan list articles
+  - Form untuk menambahkan article baru
+  - Fitur edit article
+  - Fitur hapus article
+  - Real-time update setelah operasi CRUD
+
+### Struktur Data Articles:
+```
+model Article {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+```
+
 ## 🛠️ Teknologi yang Digunakan
 
 - **Next.js 15** - React framework
 - **TypeScript** - Type safety
 - **Tailwind CSS** - Styling
+- **Prisma** - ORM
 - **Vercel** - Deployment
 
 ## 🚀 Cara Menjalankan Project
