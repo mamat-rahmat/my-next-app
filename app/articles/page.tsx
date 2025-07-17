@@ -100,7 +100,7 @@ export default function HomePage() {
 
                 {/* Create/Edit Form */}
                 <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-                    <h2 className="text-xl font-semibold mb-4">
+                    <h2 className="text-xl font-semibold text-black mb-4">
                         {editingId ? 'Edit Article' : 'Create New Article'}
                     </h2>
 
@@ -110,7 +110,7 @@ export default function HomePage() {
                                 Title
                             </label>
                             <input
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                className="w-full px-3 py-2 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                 placeholder="Enter article title..."
                                 value={title}
                                 onChange={(e) => setTitle(e.target.value)}
@@ -122,7 +122,7 @@ export default function HomePage() {
                                 Content
                             </label>
                             <textarea
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                className="w-full px-3 py-2 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                 placeholder="Write your article content..."
                                 value={content}
                                 onChange={(e) => setContent(e.target.value)}
